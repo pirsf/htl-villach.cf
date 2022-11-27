@@ -118,6 +118,74 @@
                     </li>
                 </ol>
             </div>
+            <h1 class="heading">
+                Erweitert
+            </h1>
+            <div class="container">
+                <ul>
+                    <li>
+                        <p>Deklariere 2 Variablen, die jeweils eine Zahl enthalten.</p>
+                        <pre><code>let mmNum1 <br>let mmNum2</code></pre>
+                    </li>
+                    <li>
+                        <p>Deklariere eine Variable, die den Wert 0 enthält.</p>
+                        <pre><code>let mmNum0 = 0</code></pre>
+                    </li>
+                    <li>
+                        <p>Deklariere 2 Variablen, die jeweils eine Zahl als String enthalten.</p>
+                        <pre><code>let mmStringAsNumber1 = '1' <br>let mmStringAsNumber2 = '2'</code></pre>
+                    </li>
+                    <li>
+                        <p>Deklariere eine Variable, die einen String enthält.</p>
+                        <pre><code>let mmString1 = "Hello"</code></pre>
+                    </li>
+                    <li>
+                        <p>Deklariere eine Variable, die einen Wert vom Datentyp Boolean enthält.</p>
+                        <pre><code>let mmBool1 = true</code></pre>
+                    </li>
+                </ul>
+                <p>Gib für alle Variablen den jeweiligen Datentyp mit document.write(...)aus.</p>
+                <pre><code>document.write(typeof mmNum1) <br>document.write(typeof mmNum2) <br>document.write(typeof mmNum0) <br>document.write(typeof mmStringAsNumber1) <br>document.write(typeof mmStringAsNumber2) <br>document.write(typeof mmString1) <br>document.write(typeof mmBool1)</code>
+                </pre>
+                <ol>
+                    <li>
+                        <p>Gib das Ergebnis der Division einer der Variablen, die eine Zahl enthalten durch die Variable die 0 enthält aus. Gib auch den Datentyp des Ergebnisses aus.</p>
+                        <pre><code>document.write(mmNum1/mmNum0) <br>document.write(typeof mmNum1/mmNum0)</code></pre>
+                    </li>
+                    <li>
+                        <p>Gib das Ergebnis der Division der Variable, die einen String enthält durch eineder drei Variablen, die eine Zahl enthalten,aus. Gib auch den Datentyp des Ergebnisses aus.</p>
+                        <pre><code>document.write(mmStringAsNumber1/mmNum1) <br>document.write(typeof mmStringAsNumber1/mmNum1)</code></pre>
+                    </li>
+                    <li>
+                        <p>Gib das Ergebnis einer Addition mit einer Variable, die eine Zahl enthält mit einer Variable, die eine Zahl als String enthält,aus. Gib auch den Datentyp des Ergebnisses aus.</p>
+                        <pre><code>document.write(mmNum1 + mmStringAsNumber1) <br>document.write(typeof mmNum1 + mmStringAsNumber1)</code></pre>
+                    </li>
+                    <li>
+                       <p>Gib das Ergebnis einer Subtraktion mit einer Variable, die eine Zahl enthält mit einer Variable, die eine Zahl als String enthält,aus. Gib auch den Datentyp des Ergebnisses aus.</p>
+                        <pre><code>document.write(mmNum1 - mmStringAsNumber1) <br>document.write(typeof mmNum1 - mmStringAsNumber1)</code></pre>
+                    </li>
+                    <br><br>
+                    <h3>Typumwandlung String → Number</h3>
+                    <br>
+                    <li>
+                        <p>Wandle die Variablen, welche eine Zahl als String enthalten in eine Zahl um.</p>
+                        <pre><code>mmStringAsNumber1 = Number(mmStringAsNumber1) <br>mmStringAsNumber2 = Number(mmStringAsNumber2)</code></pre>
+                    </li>
+                    <li>
+                        <p>Führe nach der Umwandlung die Addition sowie die Subtraktion für die neuen Variablen aus. Gib die Ergebnisse aus.Gib auch den Datentyp der Ergebnisse aus.</p>
+                        <pre><code>document.write(mmStringAsNumber1 + mmStringAsNumber2) <br>document.write(typeof mmStringAsNumber1 + mmStringAsNumber2) <br>document.write(mmStringAsNumber1 - mmStringAsNumber2) <br>document.write(typeof mmStringAsNumber1 - mmStringAsNumber2)</code></pre>
+                    </li>
+                    <br><br>
+                    <h3>Undefined</h3>
+                    <br>
+                    
+                    <pre><code>let undefinedNumber; <br>let definedNumber = 86; <br>let someResult = undefinedNumber + defineNumber;</code></pre>
+                    
+                    <li>Gib wieder Wert und Datentyp von <code>undefinedNumber</code> und <code>definedNumber</code> und <code>someResult</code> aus.</li>
+                    <pre><code>document.write(typeof undefinedNumber) <br>document.write(typeof definedNumber) <br>document.write(typeof someResult)</code></pre>
+
+                </ol>
+            </div>
             <script src="main.js"></script>
         </body>
     </html>
