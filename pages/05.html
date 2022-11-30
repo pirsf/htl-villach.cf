@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTL Villach Klon!</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">05 - Variables & Datatypes</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Übungen
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item active" href="#">05 - Variables & Datatypes</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">06 - Type conversion & comparisons</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="heading">05 - Variables & Datatypes</h1>
+
+            <h1 class="heading">Basis</h1>
+
+            <h2 class="heading2">Aufgabenstellung</h2>
+
+            <ol>
+                <li>
+                    <p>Lade dir die Vorlage js_template.zip herunter</p>
+                    <button class="btn btn-primary">
+                        <a
+                            target="_blank"
+                            href="https://htlvillachat.sharepoint.com/:u:/r/sites/2023-1AHITN-LB-SEW/Kursmaterialien/JS-Templates/js_template.zip?csf=1&web=1&e=yR72gr">Download</a>
+                    </button>
+                </li>
+            </ol>
+
+            <h2 class="heading2">Lösung</h2>
+            <p>In der main.js wird folgender Code geschrieben:
+            </p>
+            <pre>
+        <code>
+            let num1 = 42;
+            let num2 = 3;
+            let num3 = '41';
+            let num4 = '33';
+            let atext = 'juhe, sew!'; 
+        </code>
+    </pre>
+
+            <ol>
+                <li>Teste, welche Werte
+                    <code>res1</code>
+                    und
+                    <code>res2</code>
+                    nachfolgende Zuweisungen haben:
+                    <br>
+                    <pre><code>let res1 = num1 + num2; <br>let res2 = num3 + num4</code></pre>
+                    Output:
+                    <pre><code>document.write(res1) <br>document.write(res2)</code></pre>
+                </li>
+                <li>Teste, welche Werte
+                    <code>res1</code>
+                    und
+                    <code>res2</code>
+                    nachfolgende Zuweisungen haben:
+                    <br>
+                    <pre><code>res1 = '37' + 1 <br>res2 = '37' - 1</code></pre>
+                    Output:
+                    <pre><code>document.write(res1) <br>document.write(res2)</code></pre>
+                </li>
+                <li>Teste, welche Werte
+                    <code>num1</code>
+                    und
+                    <code>num2</code>
+                    nachfolgende Zuweisungen haben:
+                    <br>
+                    <pre><code>num1 = num1/num2 <br>num2 = num4/num2</code></pre>
+                    Output:
+                    <pre><code>document.write(num1) <br>document.write(num2)</code></pre>
+                </li>
+                <li>Teste, welche Werte
+                    <code>aText</code>
+                    nachfolgende Zuweisungen haben:
+                    <br>
+                    <pre><code>atext = atext + atext + atext <br>atext = num1 + atext</code></pre>
+                    Output:
+                    <pre><code>document.write(atext)</code></pre>
+                </li>
+            </ol>
+        </div>
+        <h1 class="heading">
+            Erweitert
+        </h1>
+        <div class="container">
+            <ul>
+                <li>
+                    <p>Deklariere 2 Variablen, die jeweils eine Zahl enthalten.</p>
+                    <pre><code>let mmnum1 <br>let mmnum2</code></pre>
+                </li>
+                <li>
+                    <p>Deklariere eine Variable, die den Wert 0 enthält.</p>
+                    <pre><code>let mmnum0 = 0</code></pre>
+                </li>
+                <li>
+                    <p>Deklariere 2 Variablen, die jeweils eine Zahl als String enthalten.</p>
+                    <pre><code>let mmstringasnumber1 = '1' <br>let mmstringasnumber2 = '2'</code></pre>
+                </li>
+                <li>
+                    <p>Deklariere eine Variable, die einen String enthält.</p>
+                    <pre><code>let mmstring1 = "hello"</code></pre>
+                </li>
+                <li>
+                    <p>Deklariere eine Variable, die einen Wert vom Datentyp Boolean enthält.</p>
+                    <pre><code>let mmbool1 = true</code></pre>
+                </li>
+            </ul>
+            <p>Gib für alle Variablen den jeweiligen Datentyp mit document.write(...)aus.</p>
+            <pre><code>document.write(typeof mmnum1) <br>document.write(typeof mmnum2) <br>document.write(typeof mmnum0) <br>document.write(typeof mmstringasnumber1) <br>document.write(typeof mmstringasnumber2) <br>document.write(typeof mmstring1) <br>document.write(typeof mmbool1)</code>
+        </pre>
+            <ol>
+                <li>
+                    <p>Gib das Ergebnis der Division einer der Variablen, die eine Zahl enthalten
+                        durch die Variable die 0 enthält aus. Gib auch den Datentyp des Ergebnisses aus.</p>
+                    <pre><code>document.write(mmnum1/mmnum0) <br>document.write(typeof mmnum1/mmnum0)</code></pre>
+                </li>
+                <li>
+                    <p>Gib das Ergebnis der Division der Variable, die einen String enthält durch
+                        eineder drei Variablen, die eine Zahl enthalten,aus. Gib auch den Datentyp des
+                        Ergebnisses aus.</p>
+                    <pre><code>document.write(mmstringasnumber1/mmnum1) <br>document.write(typeof mmstringasnumber1/mmnum1)</code></pre>
+                </li>
+                <li>
+                    <p>Gib das Ergebnis einer Addition mit einer Variable, die eine Zahl enthält mit
+                        einer Variable, die eine Zahl als String enthält,aus. Gib auch den Datentyp des
+                        Ergebnisses aus.</p>
+                    <pre><code>document.write(mmnum1 + mmstringasnumber1) <br>document.write(typeof mmnum1 + mmstringasnumber1)</code></pre>
+                </li>
+                <li>
+                    <p>Gib das Ergebnis einer Subtraktion mit einer Variable, die eine Zahl enthält
+                        mit einer Variable, die eine Zahl als String enthält,aus. Gib auch den Datentyp
+                        des Ergebnisses aus.</p>
+                    <pre><code>document.write(mmnum1 - mmstringasnumber1) <br>document.write(typeof mmnum1 - mmstringasnumber1)</code></pre>
+                </li>
+                <br><br>
+                <h3>Typumwandlung String → Number</h3>
+                <br>
+                <li>
+                    <p>Wandle die Variablen, welche eine Zahl als String enthalten in eine Zahl um.</p>
+                    <pre><code>mmstringasnumber1 = number(mmstringasnumber1) <br>mmstringasnumber2 = number(mmstringasnumber2)</code></pre>
+                </li>
+                <li>
+                    <p>Führe nach der Umwandlung die Addition sowie die Subtraktion für die neuen
+                        Variablen aus. Gib die Ergebnisse aus.Gib auch den Datentyp der Ergebnisse aus.</p>
+                    <pre><code>document.write(mmstringasnumber1 + mmstringasnumber2) <br>document.write(typeof mmstringasnumber1 + mmstringasnumber2) <br>document.write(mmstringasnumber1 - mmstringasnumber2) <br>document.write(typeof mmstringasnumber1 - mmstringasnumber2)</code></pre>
+                </li>
+                <br><br>
+                <h3>Undefined</h3>
+                <br>
+
+                <pre><code>let undefinednumber; <br>let definednumber = 86; <br>let someresult = undefinednumber + definenumber;</code></pre>
+
+                <li>Gib wieder Wert und Datentyp von
+                    <code>undefinedNumber</code>
+                    und
+                    <code>definedNumber</code>
+                    und
+                    <code>someResult</code>
+                    aus.</li>
+                <pre><code>document.write(typeof undefinednumber) <br>document.write(typeof definednumber) <br>document.write(typeof someresult)</code></pre>
+
+            </ol>
+        </div>
+    </body>
+</html>

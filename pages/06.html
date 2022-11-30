@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTL Villach Klon!</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">06 - Type conversion & comparisons</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Übungen
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item active" href="#">05 - Variables & Datatypes</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">06 - Type conversion & comparisons</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="heading">06 - Type conversion & comparisons</h1>
+
+            <h1 class="heading">06a</h1>
+
+            <h2 class="heading2">Aufgabenstellung</h2>
+
+            <pre><code> // ToString
+let value = 42;
+document.write('Value ' + value)
+
+
+// ToString 
+// Automatically converts to string
+
+let value = 42;     // Number 42
+document.write('Value ' + value);   // String '42'
+
+
+// String(value)
+
+value = 42;        // Number 42
+value = String(value);  // String '42'
+
+
+// ToString 2
+
+value = true;      // Boolean true
+value = String(value);  // String 'true'
+
+
+//ToNumber 1
+
+let result = 6*2;  // Number 12
+result = '6' * '2';  // Number 12
+
+result = 6 / 2;    // Number 3
+result = '6' / '2';  // Number 3
+
+result = 6 - 2;    // Number 4
+result = '6' - '2';  // Number 4
+
+result = 6 + 2;    // Number 8
+result = '6' + '2';  // String '62' 
+
+
+// ToNumber 2
+
+let str = '123';  // String '123'
+let num = Number(str);  // Number 123
+
+
+// ToNumber 2a
+
+let stNum1 = '6'    // String '6'
+let stNum2 = '2'    // String '2'
+
+let num1 = Number(stNum1);  // Number 6
+let num2 = Number(stNum2);  // Number 2
+
+let result_num = num1 + num2;  // Number 8
+
+// ToNumber 3
+
+let age = Number('123 EUR');  // NaN, conversion failed
+
+// ToNumber 4
+
+let input;
+Number(input)
+
+// If input is '1234' then result is 1234
+// If input is 'A1234' then result is NaN
+// If input is undefined then result is NaN
+// If input is null then result is 0
+// If input is true then result is 1
+// If input is false then result is 0
+
+// ToNumber 5
+
+document.write(  Number('        123         ') );  // 123
+document.write(  Number('123z') );  // NaN (error reading a number at "z")
+document.write(  Number(true) );  // 1
+document.write(  Number(false) );  // 0
+
+
+// ToBoolean 1
+
+let myBoolean = Boolean(42);  // true
+
+// ToBoolean 2
+
+// Boolean(value)
+// If value is 0 then result is false
+// If value is null then result is false
+// If value is undefined then result is false
+// If value is NaN then result is false
+// If value are other values then result is true
+
+
+// ToBoolean 3
+
+document.write(  Boolean(1) );  // true
+document.write(  Boolean(0) );  // false
+
+document.write(  Boolean('hello') );  // true	
+document.write(  Boolean('') );  // false
+
+
+// ToBoolean 4
+
+document.write(  Boolean('0') );  // true
+document.write(  Boolean(' ') );  // spaces, also true (any non-empty string is true)
+
+
+
+            </code></pre>
+    
+
+            <h1 class="heading">06b</h1>
+
+<pre><code>
+// Comparisons
+
+// The result of a comparison is a boolean value: true or false.
+
+alert( 2 > 1 );  // true
+alert( 2 == 1 ); // false
+alert( 2 != 1 ); // true
+
+// The result can also be assigned to a variable
+
+let result = 5 > 4; // assign the result of the comparison
+alert( result ); // true
+
+
+// String comparison
+
+alert( 'Z' > 'A' ); // true
+alert( 'Glow' > 'Glee' ); // true
+alert( 'Bee' > 'Be' ); // true
+
+// Comparison of different types
+
+alert( '2' > 1 ); // true, string '2' becomes a number 2
+alert( '01' == 1 ); // true, string '01' becomes a number 1
+
+alert( true == 1 ); // true
+alert( false == 0 ); // true
+
+
+// Strict equality
+
+alert( 0 == false ); // true
+alert( '' == false ); // true
+
+// Stict equality 3
+
+alert( 0 === false ); // false, because the types are different
+
+
+// Comparison with null and undefined
+
+alert( null === undefined ); // false
+alert( null == undefined ); // true
+
+</code></pre>
+        </div>
+    </body>
+</html>
